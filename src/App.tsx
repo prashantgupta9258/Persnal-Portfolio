@@ -19,9 +19,9 @@ export default function App() {
     <LanguageProvider>
       <HelmetProvider>
         <Helmet>
-          <title>Portfolio | Creative Developer</title>
+          <title>Prashant Gupta | Creative Developer</title>
           <meta name="description" content="A premium portfolio showcasing creative development, UI/UX design, and full-stack engineering." />
-          <meta property="og:title" content="Portfolio | Creative Developer" />
+          <meta property="og:title" content="Prashant Gupta | Creative Developer" />
           <meta property="og:description" content="A premium portfolio showcasing creative development, UI/UX design, and full-stack engineering." />
           <meta property="og:type" content="website" />
         </Helmet>
