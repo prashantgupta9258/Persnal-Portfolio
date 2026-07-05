@@ -1,0 +1,6 @@
+{
+  "name": "Premium Personal Portfolio",
+  "description": "An ultra-premium, luxury personal portfolio website featuring glassmorphism, smooth animations, and high-end design. Ready to showcase award-winning projects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

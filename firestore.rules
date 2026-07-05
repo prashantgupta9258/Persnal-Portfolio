@@ -1,0 +1,36 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth != null && (
+        request.auth.token.email == 'prashantgupta9258@gmail.com' || 
+        exists(/databases/$(database)/documents/admins/$(request.auth.token.email))
+      );
+    }
+    match /contacts/{contactId} {
+      allow create: if true;
+      allow read, update, delete: if isAdmin();
+    }
+    match /projects/{projectId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+    match /admins/{adminId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+    match /experience/{expId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+    match /testimonials/{testId} {
+      allow read: if true;
+      allow create: if true;
+      allow update, delete: if isAdmin();
+    }
+    match /settings/{settingId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+  }
+}
