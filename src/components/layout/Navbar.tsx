@@ -27,7 +27,7 @@ export default function Navbar() {
       className="fixed dark-section text-foreground top-6 left-1/2 -translate-x-1/2 w-[calc(100%-48px)] max-w-6xl z-50 flex items-center justify-between px-6 py-3 glass rounded-full"
     >
       <Link to="/" className="text-xl font-heading font-extrabold tracking-tight text-foreground hover:text-gray-300 transition-colors flex items-center gap-2">
-        <img src="/favicon.svg" alt="Logo" className="w-6 h-6 rounded" />
+        <img src="/favicon.svg?v=2" alt="Logo" className="w-6 h-6 rounded" />
         PRASHANT<span className="text-primary">.</span>
       </Link>
 

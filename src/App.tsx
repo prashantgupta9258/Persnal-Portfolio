@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 import Home from './pages/Home';
 import ProjectDetail from './pages/ProjectDetail';
@@ -19,7 +19,7 @@ export default function App() {
     <LanguageProvider>
       <HelmetProvider>
         <Helmet>
-          <title>Prashant Gupta | Creative Developer</title>
+          <title>Prashant Portfolio</title>
           <meta name="description" content="A premium portfolio showcasing creative development, UI/UX design, and full-stack engineering." />
           <meta property="og:title" content="Prashant Gupta | Creative Developer" />
           <meta property="og:description" content="A premium portfolio showcasing creative development, UI/UX design, and full-stack engineering." />
